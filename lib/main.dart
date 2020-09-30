@@ -61,7 +61,11 @@ class _HomeState extends State<Home> {
           Padding(padding: EdgeInsets.all(10)),
           Icon(Icons.search),
           Padding(padding: EdgeInsets.all(10)),
-          Icon(Icons.person),
+          CircleAvatar(
+            radius: 13,
+            backgroundColor: Colors.red,
+            child: const Text("R"),
+          ),
         ],
       ),
       body: _widgetsScreenTapped[index],
